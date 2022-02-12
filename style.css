@@ -1,0 +1,391 @@
+/* 
+Theme name: 2030 Project Theme
+Author: Chrissie Koles
+Description: A theme made for the 2030 final project.
+*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 58);
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.nav li {
+    display: inline;
+}
+h1 {
+    color: deeppink;
+    width: fit-content;
+}
+h1:hover {
+    animation: jiggle 1s;
+    transform-origin: 50% 50%;
+}
+@keyframes jiggle {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+}
+h1 a {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+h1 a:hover {
+    color: lightblue;
+}
+nav {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+nav li {
+    margin-right: 0.5rem;
+}
+nav li a {
+    background-color: lightblue;
+    color: rgb(0, 0, 66);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+nav li a:hover {
+    background-color: deeppink;
+    transition: 0.5s;
+}
+#hidemenu {
+    display: none;
+}
+h2 {
+    color: darkmagenta;
+    text-shadow: 2px 2px 2px black;
+}
+.frontpage {
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.frontpage img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+}
+.frontpage a {
+    color: deepskyblue;
+}
+.frontpage a:hover{
+    color: deeppink;
+}
+header, nav, main > h2 {
+    margin-left: 5rem;
+}
+.genrewrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.genrewrapper .category {
+    background-color: rgb(2, 2, 24);
+    width: 30%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 8px rgb(65, 5, 37);
+    min-width: 180px;
+}
+.genrewrapper .category:hover {
+    background-color: rgb(51, 1, 39);
+    transition: 1.5s;
+}
+.genrewrapper .category img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.genrewrapper a {
+    color: deepskyblue;
+}
+.genrewrapper a:hover {
+    color: deeppink;
+}
+.artistwrapper {
+    width: 80%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+.artistwrapper .category img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+.artistwrapper .category img:hover {
+    filter: none;
+    transition: 0.5s;
+}
+.artistwrapper a {
+    color: deeppink;
+}
+.artistwrapper a:hover{
+    color: deepskyblue;
+}
+.artistwrapper h2, .artistwrapper p {
+    margin: 0;
+}
+.artistwrapper h2 a {
+    color: deepskyblue;
+}
+.artistwrapper h2 a:hover {
+    color: deeppink;
+}
+.artistwrapper .category {
+    border-right: 2px groove;
+    border-image: linear-gradient(to bottom, deeppink, rgba(0, 0, 0, 0)) 0 100%;
+}
+.artistwrapper p {
+    overflow: hidden;
+}
+.singlepost {
+    width: 60%;
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgb(73, 7, 56), rgba(0, 0, 0, 0));
+    padding: 2rem;
+}
+.singlepost a {
+    color: deepskyblue;
+}
+.singlepost a:hover {
+    color: deeppink;
+}
+.singlepost img {
+    width: 400px;
+    height: auto;
+    float: right;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+.move {
+    width: fit-content;
+    position: relative;
+    animation: moving 5s ease-in-out alternate infinite;
+}
+@keyframes moving {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+        color: magenta;
+    }
+}
+.postswrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.postswrapper .category {
+    /* background-image: linear-gradient(to bottom, rgb(48, 0, 48), rgba(0, 0, 0, 0)); */
+    border: 2px groove rgb(68, 0, 68);
+    width: 30%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    min-width: 180px;
+}
+.postswrapper .category:hover {
+    background-color: rgb(44, 0, 44);
+    transition: 1.5s;
+}
+.postswrapper .category img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.postswrapper a {
+    color: deepskyblue;
+}
+.postswrapper a:hover {
+    color: deeppink;
+}
+.postswrapper p {
+    overflow: hidden;
+}
+.documentation {
+    width: 80%;
+    margin: auto;
+}
+.documentation li {
+    margin-bottom: 1rem;
+}
+.documentation a {
+    color: deepskyblue;
+}
+.documentation a:hover {
+    color: deeppink;
+}
+/* Code for image onclick behaviour taken and modified from https://www.w3schools.com/howto/howto_css_modal_images.asp */
+.catimage {
+    cursor: pointer;
+}
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.fullimg {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    animation: showfull 0.6s;
+}
+@keyframes showfull {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    color: deepskyblue;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover {
+    color: deeppink;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        width: 100%;
+        margin: 0;
+        background-color: black;
+    }
+    #hidemenu {
+        display: block;
+        background-color: darkturquoise;
+        border: none;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #hidemenu:hover {
+        background-color: deeppink;
+        transition: 0.5s;
+    }
+    nav {
+        display: none;
+    }
+    h1 a {
+        color: darkmagenta;
+    }
+    h1 a:hover {
+        color: deepskyblue;
+    }
+    .move {
+        animation: none;
+        margin: 0;
+        padding-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        color: darkcyan;
+    }
+    nav, nav ul, nav li {
+        margin: 0;
+        padding: 0;
+    }
+    nav li a {
+        display: block;
+        padding: 1.5rem;
+        background-color: darkmagenta;
+    }
+    nav li a:hover {
+        background-color: deeppink;
+        transition: 0.8s;
+    }
+    .singlepost {
+        width: 100%;
+        padding: 0;
+    }
+    .singlepost img {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .singlepost h2, .singlepost p {
+        padding-left: 1rem;
+    }
+    .genrewrapper {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+    .genrewrapper .category {
+        width: 100%;
+    }
+    .frontpage {
+        max-width: 100%;
+    }
+    .frontpage p {
+        padding: 0.2rem 1rem;
+    }
+    .frontpage img {
+        height: 150px;
+    }
+    .artistwrapper {
+        width: 100%;
+        grid-template-columns: auto auto;
+        grid-gap: 0;
+        background-color: black;
+    }
+    .postswrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+    .postswrapper .category {
+        margin: 0;
+        width: 100%;
+        padding: 0 0 1rem 0;
+        border: none;
+        border-bottom: 2px groove rgb(68, 0, 68);;
+    }
+    .documentation {
+        width: 100%;
+    }
+    header {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .artistwrapper {
+        grid-template-columns: auto;
+    }
+    .artistwrapper .category {
+        margin-bottom: 1rem;
+    }
+}
